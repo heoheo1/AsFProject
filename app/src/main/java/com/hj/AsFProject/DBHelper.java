@@ -1,4 +1,4 @@
-package com.hj.studyactivity;
+package com.hj.AsFProject;
 
 import android.content.Context;
 import android.database.DatabaseErrorHandler;

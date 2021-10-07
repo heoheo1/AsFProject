@@ -1,4 +1,4 @@
-package com.hj.studyactivity;
+package com.hj.AsFProject;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.hj.studyactivity", appContext.getPackageName());
+        assertEquals("com.hj.AsFProject", appContext.getPackageName());
     }
 }

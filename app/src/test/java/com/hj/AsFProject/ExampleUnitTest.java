@@ -1,4 +1,4 @@
-package com.hj.studyactivity;
+package com.hj.AsFProject;
 
 import org.junit.Test;
 

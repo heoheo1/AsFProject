@@ -1,5 +1,6 @@
-package com.hj.studyactivity;
+package com.hj.AsFProject;
 
+import AsFProject.R;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -9,8 +10,7 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
+
 
 public class IntroActivity extends AppCompatActivity {
 

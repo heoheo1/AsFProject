@@ -1,13 +1,14 @@
-package com.hj.studyactivity;
+package com.hj.AsFProject;
 
+import AsFProject.R;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+
 
 public class PictureActivtiy extends AppCompatActivity {
 

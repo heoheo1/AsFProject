@@ -1,6 +1,6 @@
-package com.hj.studyactivity;
+package com.hj.AsFProject;
 
-import android.net.Uri;
+
 
 public class Item {
     String title;

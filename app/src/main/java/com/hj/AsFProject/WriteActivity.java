@@ -1,5 +1,6 @@
-package com.hj.studyactivity;
+package com.hj.AsFProject;
 
+import AsFProject.R;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,14 +8,9 @@ import android.content.ContentValues;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.renderscript.ScriptGroup;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -23,9 +19,6 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
-import java.io.FileNotFoundException;
-import java.io.InputStream;
-import java.net.Inet4Address;
 
 public class WriteActivity extends AppCompatActivity {
     EditText edt_title,edt_contents;
