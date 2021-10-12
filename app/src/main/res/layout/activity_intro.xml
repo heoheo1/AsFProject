@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.hj.AsFProject.IntroActivity">
+    android:background="#55f3e5f5"
+    >
 
     <ImageView
         android:id="@+id/intro_img"
@@ -14,5 +15,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/gongzone" />
+        app:srcCompat="@drawable/intro_asf" />
 </androidx.constraintlayout.widget.ConstraintLayout>

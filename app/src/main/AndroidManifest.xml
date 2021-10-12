@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher_write_foreground"
+        android:icon="@mipmap/ic_launcher_asf_round"
         android:label="AsF어플"
-        android:roundIcon="@mipmap/ic_launcher_write_round"
+        android:roundIcon="@mipmap/ic_launcher_asf_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.StudyActivity">
         <activity

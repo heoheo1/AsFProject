@@ -34,6 +34,7 @@ public class SubjectActivity extends AppCompatActivity implements View.OnClickLi
         findViewById(R.id.btn_english).setOnClickListener(this);
         findViewById(R.id.btn_gluttony).setOnClickListener(this);
         findViewById(R.id.btn_satam).setOnClickListener(this);
+        findViewById(R.id.btn_history).setOnClickListener(this);
 
         sharedPreferences = getSharedPreferences("pref", MODE_PRIVATE);
         spemail = sharedPreferences.getString("email", "");
@@ -66,6 +67,11 @@ public class SubjectActivity extends AppCompatActivity implements View.OnClickLi
 
             case (R.id.btn_satam) :
                 subject="사탐";
+                subject(subject);
+                break;
+
+            case (R.id.btn_history):
+                subject="한국사";
                 subject(subject);
                 break;
 

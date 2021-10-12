@@ -4,15 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.hj.AsFProject.WriteActivity">
+    android:background="#55f3e5f5"
+   >
 
     <ImageView
         android:id="@+id/imageView"
+        android:layout_margin="5dp"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_gallery"
+       android:src="@drawable/ic_baseline_add_photo_alternate_24"
         android:scaleType="fitXY"/>
 
     <TextView
@@ -20,9 +22,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="20dp"
-        android:text="제목 : "
-        android:textSize="20dp"
+        android:layout_marginTop="28dp"
+        android:text="문제 : "
+        android:textSize="15dp"
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -31,10 +33,10 @@
         android:id="@+id/edt_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
-        android:ems="16"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="12dp"
+        android:ems="14"
+        android:hint="문제를 입력해주세요"
         android:padding="8dp"
         android:textStyle="bold"
         app:layout_constraintLeft_toRightOf="@+id/txt_title"
@@ -45,9 +47,11 @@
         android:layout_width="match_parent"
         android:layout_height="330dp"
         android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
         android:padding="10dp"
         android:gravity="top|start"
-        android:text="내용 :"
+        android:text="풀이 :"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edt_title" />
 

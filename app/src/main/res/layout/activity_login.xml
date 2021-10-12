@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.hj.AsFProject.MainActivity"
-    android:background="@drawable/back">
+    android:background="#55f3e5f5">
 
 
 
@@ -17,7 +16,9 @@
         android:layout_marginLeft="84dp"
         android:layout_marginTop="180dp"
         android:background="@drawable/button_corners2_1"
+        android:fontFamily="@font/sbm"
         android:ems="13"
+
         android:hint="아이디를 입력해주세요"
         android:textColor="@color/black"
         android:textColorHint="#909090"
