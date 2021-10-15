@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
     Intent intent;
     RecyclerView recyclerView;
     ArrayList itemArrayList;
-    String cursorEmail;
     String  databaseName ="MemberDB";
     SQLiteDatabase db;
     MyAdapter adapter;
@@ -33,10 +32,7 @@ public class MainActivity extends AppCompatActivity {
     Cursor cursor;
     SharedPreferences sharedPreferences;
     String spemail;
-    long pressedTime =0 ;
     String spsubject;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         itemArrayList =new ArrayList();
-        adapter =new MyAdapter(this,itemArrayList);
+        adapter =new MyAdapter(getApplicationContext(),itemArrayList);
         sharedPreferences = getSharedPreferences("pref", MODE_PRIVATE);
         spemail = sharedPreferences.getString("email", "");
         spsubject =sharedPreferences.getString("subject","");
@@ -79,9 +75,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 intent =new Intent(getApplicationContext(),WriteActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
-
             }
         });
     }
@@ -93,11 +87,9 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-
         Intent intent =new Intent(getApplicationContext(),SubjectActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
-
-
     }
 
 }

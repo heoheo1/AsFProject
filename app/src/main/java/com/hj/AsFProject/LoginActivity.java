@@ -88,6 +88,7 @@ public class LoginActivity extends AppCompatActivity {
                         SharedPreferences.Editor editor= sharedPreferences.edit();
                         editor.putString("email",cursorEmail);
                         editor.commit();
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
                         finish();
                         break;

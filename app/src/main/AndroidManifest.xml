@@ -3,36 +3,35 @@
     package="AsFProject">
 
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher_asf_round"
         android:label="AsF어플"
         android:roundIcon="@mipmap/ic_launcher_asf_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.StudyActivity">
         <activity
+            android:name="com.hj.AsFProject.CommentActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.hj.AsFProject.PictureActivtiy"
+            android:exported="false" />
+        <activity
             android:name="com.hj.AsFProject.IntroActivity"
             android:exported="true" >
             <intent-filter>
             <action android:name="android.intent.action.MAIN" />
-
             <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name="com.hj.AsFProject.SubjectActivity"
             android:exported="true" />
-        <activity
-            android:name="com.hj.AsFProject.PictureActivtiy"
-            android:exported="true" />
         <activity android:name="com.hj.AsFProject.WriteActivity" />
         <activity android:name="com.hj.AsFProject.LoginActivity"/>
-
-
         <activity android:name="com.hj.AsFProject.SingUpActivity" />
         <activity android:name="com.hj.AsFProject.MainActivity" />
     </application>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE " />
 
 </manifest>

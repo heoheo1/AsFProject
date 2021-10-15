@@ -82,11 +82,11 @@ public class SubjectActivity extends AppCompatActivity implements View.OnClickLi
     public void subject(String subject){
         db =dbHelper.getWritableDatabase();
         Intent intent = new Intent(getApplicationContext(), MainActivity.class); //데이터를 생성후 Login 화면으로 이동
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         sharedPreferences =getSharedPreferences("pref",MODE_PRIVATE);
         SharedPreferences.Editor editor= sharedPreferences.edit();
         editor.putString("subject",subject);
         editor.commit();
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
         finish();
     }
