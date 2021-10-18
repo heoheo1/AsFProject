@@ -15,6 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
        android:src="@drawable/ic_baseline_add_photo_alternate_24"
+        app:layout_constraintRight_toRightOf="parent"
         android:scaleType="fitXY"/>
 
     <TextView
@@ -39,6 +40,7 @@
         android:hint="문제를 입력해주세요"
         android:padding="8dp"
         android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/txt_title"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -52,6 +54,7 @@
         android:padding="10dp"
         android:gravity="top|start"
         android:text="풀이 :"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edt_title" />
 
@@ -68,6 +71,7 @@
         android:textColor="@color/black"
         app:backgroundTint="@android:color/transparent"
         app:backgroundTintMode="add"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edt_contents" />
 
